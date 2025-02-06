@@ -1,0 +1,13 @@
+
+#NoisyViT_food
+#training
+python Main.py --lr 0.00001 --epochs 30 --batch_size 16 --layer 11 --gpu_id 0 --res 224 --patch_size 16 --scale base --noise_type linear --datasets food2k --num_classes 2000 --tra 0 --inf 1 --OptimalQ 1
+
+python Main.py --lr 0.00001 --epochs 30 --batch_size 16 --layer 11 --gpu_id 0 --res 384 --patch_size 16 --scale base --noise_type linear --datasets food2k --num_classes 2000 --tra 0 --inf 1 --OptimalQ 1
+
+python Main.py --lr 0.00001 --epochs 30 --batch_size 16 --layer 11 --gpu_id 0 --res 224 --patch_size 16 --scale base --noise_type linear --datasets CNFOOD241 --num_classes 241 --tra 0 --inf 1 --OptimalQ 1
+
+python Main.py --lr 0.00001 --epochs 30 --batch_size 16 --layer 11 --gpu_id 0 --res 224 --patch_size 16 --scale base --noise_type linear --datasets food101 --num_classes 101 --tra 0 --inf 1 --OptimalQ 1
+
+#inference
+python Inference.py --lr 0.00001 --epochs 1 --batch_size 16 --layer 11 --gpu_id 0 --res 224 --patch_size 16 --scale base --noise_type linear --model_saved_path 'acc_0.9325_lr_1e-05_bs_16_layer_11_base_224_16_linear_food2k_NoisyViT.pkl' --test_path './test' --num_classes 2000 --tra 0 --inf 1 --OptimalQ 1
