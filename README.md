@@ -67,7 +67,6 @@ Commands can be found in `runScript.txt`. An example:
 ```
 python Main.py --lr 0.00001 --epochs 30 --batch_size 16 --layer 11 --gpu_id 0 --res 224 --patch_size 16 --scale base --noise_type linear --datasets food2k --num_classes 2000 --tra 0 --inf 1 --OptimalQ 1
 ```
-### Saved models:
 
 ### Inference:
 
@@ -79,6 +78,7 @@ python Inference.py --lr 0.00001 --epochs 1 --batch_size 16 --layer 11 --gpu_id 
 ## Acknowledgement 
 Our code is largely borrowed from [NoisyNN](https://github.com/Shawey94/NoisyNN/tree/main)
 
+The code was developed by [Tonmoy Ghosh](https://scholar.google.com/citations?user=O-8G6JEAAAAJ&hl=en) at [CLAWS](https://claws.eng.ua.edu/research-projects/9-research-projects/302-improving-food-image-recognition-with-noisy-vision-transformer) lab, the University of Alabama.
 
 ## License
 
